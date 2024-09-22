@@ -1,362 +1,601 @@
-<div class="row" id="portada"></div>
-<div class="row" id="titulo">
-    <h1>PATRICK ROMERO</h1>
-    <p>MI EXPERIENCIA EN EL MUNDO DEL DESARROLLO</p>
+<div id="carrousel" class="carousel slide" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carrousel" data-bs-slide-to="0" class="active" aria-current="true"
+			aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner" id="portada">
+		<div class="carousel-item active">
+			<img src="./img/Portada.jpg" class="d-block w-100" alt="portada.jpg">
+			<div class="carousel-caption d-block titulo">
+				<h1>PATRICK ROMERO</h1>
+				<p>MI CAMINO EN EL MUNDO DEL DESARROLLO</p>
+				<button type="button" id="#perfil" class="btn btn-outline-light btn-lg">Ver Más</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="./img/lenguajes-2.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-block titulo">
+				<h2>CONOCIMIENTOS</h2>
+				<p>Lenguajes con los que he trabajado</p>
+				<button type="button" id="#lenguajes" class="btn btn-outline-light btn-lg">Ver Más</button>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="./img/exp.jpg" class="d-block w-100" alt="...">
+			<div class="carousel-caption d-block titulo">
+				<h2>EXPERIENCIAS</h2>
+				<p>Habilidades como programador y trayectoria</p>
+				<button type="button" id="#habilidades" class="btn btn-outline-light btn-lg">Ver Más</button>
+			</div>
+		</div>
+		<i class="fas fa-mail-bulk    "></i>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carrousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carrousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
 </div>
-<div class="row py-5 ventana">
-    <div class="col-12 col-md-6 col-lg-4 text-center pt-5" id="personal">
-        <img src="{absolute}/img/profile.jpg" class="mb-4" alt="Patrick Romero | Desarrollador Fullstack">
-        <p><strong>Patrick Romero</strong><br>
-            Cuento con 4 años de experiencia en el análisis y desarrollo de aplicaciones y sitios web.
-        </p>
-    </div>
-    <div class="col-12 col-md-6 col-lg-8 py-5" id="resena">
-        <h2>Breve Reseña</h2>
-        <p class="mt-4">El año 2018 comencé a desarrollar y aprender a utilizar Slim Framework para un proyecto en el
-            instituto.
-            En 2019 hice mi práctica laboral en C# donde se trabajaba con la metodología SCRUM, fui evaluado con
-            un 6.5 en una escala de 1 a 7 y en el examen final con un 7, siendo aprobado con la
-            <strong>máxima distinsión</strong>.
-        </p>
-        <p>
-            Ese mismo año comienzo a trabajar en CASCHILE en el cargo de
-            <strong>Programador Web</strong>, cargo
-            que llevo ejerciendo hasta el día de hoy. De manera paralela, trabajo en proyectos personales
-            desarrollando aplicaciones nativas para Android utilizando JAVA e híbridas utilizando APACHE
-            CORDOVA,
-            con lo cual he podido llevar una exportación exitosa a sistemas operativos como IOS y Android.
-        </p>
-        <p>
-            Luego hice un par de cursos para adentrarme en el mundo de Typescript y de GIT, con el objeto de
-            mejorar la compatibilidad de javascript en los navegadores, aplicando un tipado fuerte, programar
-            con
-            las mejores prácticas y llevar un mejor control de versiones mediante Git.
-        </p>
-    </div>
+<div class="row py-5 ventana" id="perfil">
+	<div class="col-12 col-md-6 col-lg-5 text-center pt-5" id="personal">
+		<img src="{absolute}/img/perfil2.jpg" class="mb-4" alt="Patrick Romero | Desarrollador Fullstack">
+		<figure class="text-end">
+			<p class="text-center">Cuento con 5 años de experiencia en el análisis y desarrollo de aplicaciones y sitios
+				web.</p>
+			<blockquote class="blockquote">
+				<p class="text-end">
+					<i class="fas fa-quote-left" style="position: relative;top:-10px;"></i>
+					Me apasiona programar, cada problemática es un desafío nuevo para mí, es por eso que estoy en un
+					contínuo
+					aprendizaje de las nuevas tecnologías y frameworks en el desarrollo de programas.<i
+						class="fas fa-quote-right"></i>
+				</p>
+			</blockquote>
+			<figcaption class="blockquote-footer mt-1">
+				<strong>Patrick Romero</strong>
+			</figcaption>
+		</figure>
+		<div class="social">
+			<a href="mailto:patrick@holapatrick.com" title="Correo de contacto">
+				<i class="fas fa-envelope"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/patrick-romero-figueroa-a77704231/" target="_blank" title="Linkedin">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/patatrick" target="_blank" title="Github">
+				<i class="fab fa-github"></i>
+			</a>
+		</div>
+	</div>
+	<div class="col-12 col-md-6 col-lg-7 p-sm-5 py-5" id="resena">
+		<h2>Breve Reseña</h2>
+		<p class="mt-4">El año 2018 comencé a desarrollar y aprender a utilizar Slim Framework para un proyecto en el
+			Instituto Profesional Los Lagos.
+			En 2019 hice mi práctica laboral en C# donde se trabajaba con la metodología SCRUM, fui evaluado con
+			un 6.5 en una escala de 1 a 7 y en el examen final con un 7, siendo aprobado con la
+			<strong>máxima distinción</strong>.
+		</p>
+		<p>
+			Ese mismo año comienzo a trabajar en CASCHILE en el cargo de
+			<strong>Programador Web</strong>, cargo
+			que llevo ejerciendo hasta el día de hoy. De manera paralela, trabajo en proyectos personales
+			desarrollando aplicaciones nativas para Android utilizando JAVA e híbridas utilizando APACHE
+			CORDOVA,
+			con lo cual he podido llevar una exportación exitosa a sistemas operativos como IOS y Android.
+		</p>
+		<p>
+			Luego hice un par de cursos para adentrarme en el mundo de Typescript y de GIT, con el objeto de
+			mejorar la compatibilidad de javascript en los navegadores, aplicando un tipado fuerte, programar
+			con
+			las mejores prácticas y llevar un mejor control de versiones mediante Git.
+		</p>
+	</div>
 </div>
 <section class="row py-5 ventana" id="lenguajes">
-    <div class="col-12 text-center">
-        <h2>CONOCIMIENTOS</h2>
-        <p>Lenguajes de programación y maquetados con los cuales he trabajado.</p>
-    </div>
-    <div class="col-12">
-        <ul>
-            <li>HTML5</li>
-            <li>Javascript, TypeScript, Jquery</li>
-            <li>CSS, LESS, Bootstrap</li>
-            <li>PHP OOP, Codeigniter, SlimFramework, PHPMailer</li>
-            <li>VBSCRIPT</li>
-            <li>ASP .NET</li>
-            <li>JAVA</li>
-            <li>C#</li>
-            <li>GIT</li>
-            <li>MYSQL</li>
-            <li>SQLSERVER</li>
-        </ul>
-    </div>
+	<div class="col-12 col-md-6 text-center my-auto">
+		<h2>CONOCIMIENTOS</h2>
+		<p>Lenguajes de programación y maquetados con los cuales he trabajado.</p>
+	</div>
+	<div class="col-12 col-md-6 my-auto">
+		<ul>
+			<li>HTML5</li>
+			<li>CSS, LESS, Bootstrap</li>
+			<li>PHP OOP, Codeigniter, SlimFramework, PHPMailer</li>
+			<li>Javascript, Jquery, TypeScript, Node, Angular, React, JSX, MongoDB</li>
+			<li>VBSCRIPT</li>
+			<li>ASP.NET CORE</li>
+			<li>JAVA</li>
+			<li>C#</li>
+			<li>GIT</li>
+			<li>MYSQL</li>
+			<li>SQLSERVER</li>
+		</ul>
+	</div>
 </section>
 <section class="row py-5" id="habilidades">
-    <div class="col-12 text-center mb-5">
-        <h2>HABILIDADES</h2>
-        <p>Detalle más profundo de mis habilidades como programador y experiencia.</p>
-    </div>
-    <div class="col-12">
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/html.png" alt="html-css-js"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            Proyecto del instituto. Sitio web para la <strong>gestión y administración
-                            de condominios</strong>, trabajando en el lado del cliente con HTML5, CSS y Javascript, y
-                            así como con Bootstrap (Framework de CSS) y Jquery (Framework Javascript).
-                            En el lado del servidor, montamos una APIRest con SlimFramework, la cual se comunicaba
-                            con la base de datos MySQL. <br>
-                            <a href="https://github.com/github-pat/SAC" target="_blank">https://github.com/github-pat/SAC</a>
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Sitio web autoadministrable SPA para la <strong>Revista Digital Bulevar San Antonio, Chile.</strong>
-                            Se utilizó todo lo mencionado anteriormente, y se utilizó un código de javascript llamado
-                            PdfToImage, el cual convierte un documento en PDF a Imagen, el cual se encuentra en mi repositorio
-                            de github: <br>
-                            <a href="https://github.com/github-pat/helpers/tree/main/pdfConverter-master" target="_blank" >
-                                https://github.com/github-pat/helpers/tree/main/pdfConverter-master
-                            </a><br>
-                        </p>
-                        <p>
-                            El cliente subía un pdf y el sistema por dentro transformaba cada una de las páginas
-                            en imágenes, esto lo hacía, con el objeto de acelerar la carga de cada una de las páginas del 
-                            documento, ya que al cargar el pdf en el sitio web, el usuario experimentaba una demora, 
-                            debido a la carga completa del documento y no sólo de la página que leía.
-                            <br><i>Revista actualmente no disponible por no pago de hosting y dominio.</i>
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Sitio web autoadministrable SPA para 2 colegios, <strong>Colegio Las Cruces y Colegio Newen.</strong>
-                            Módulo de intranet de colegio, donde permite la promoción y matricula del alumnado. Se utilizó lo anteriormente nombrado,
-                            y se hizo una apirest en php para la comunicación del cliente/servidor con la base de datos MySQL.
-                            <br><i>Repositorio privado</i>
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Vistas para sitio de <strong>Farmacia Municipal.</strong>
-                            Se utilizó HTML, CSS, Javascript - Bootstrap y Jquery.
-                            <br><i>Repositorio privado</i>
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Sitio web autoadministrable SPA <strong>Corredora Norma Quiroz Huaico.</strong>
-                            Se utilizó PHP, HTML, CSS, Javascript - Bootstrap y Jquery. El sitio utiliza una api externa para obtener el valor
-                            de la UF, convirtiendo los precios de pesos a UF y viceversa según estime el visitante del sitio. <br>
-                            El cliente aún no sube nada al sitio web, por lo cual están los textos de prueba. Base de datos MySQL.
-                            <br>
-                            <a href="https://corredoranormaquiroz.cl/" target="_blank">https://corredoranormaquiroz.cl/</a>
-                            <br>
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/ts.png" alt="html-css-js"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            <strong>Red social</strong> Aplicación híbrida (IOS, Android y Browser). El proyecto se encuentra en etapa de desarrollo. 
-                            Se está creando en APACHE CORDOVA con HTML5, CSS y TypeScript - Bootstrap y Angular 8. <br>
-                            Consume una api-rest creada por mi en PHP, la cual gestiona al cliente con el servidor y la base de datos en MySQL.
-                            <i>Repositorio no disponible.</i>
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            <strong>Portafolio.</strong> Este es un sitio web SPA y está creado con HTML5, TypeScript y CSS - Bootstrap.
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                 <img src="{absolute}/img/php.png" alt="php"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            <strong>Api Rest</strong> programada de forma nativa en PHP orientado a objeto. Esta Api, es la 
-                            que ocupo generalmente en mis proyectos, ya que es liviana y fácil de implementar. Su consumo es 
-                            mediante JSON, sin embargo también es compatible con XML.
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            En CASCHILE, empresa donde soy empleado, mantengo e implemento cambios en un sitio web hecho en PHP 
-                            con el Framework <strong>Codeigniter</strong>, donde hice un curso intensivo de éste para poder 
-                            gestionar el sitio de mejor forma.
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Consumo de servicios a WebServices mediante XML con <strong>SOAP,</strong> también en CASCHILE.
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/android-java.png" alt="android-java"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            Aplicación creada en Android Studio bajo el lenguaje de JAVA. Esta es una aplicación 
-                            para aumentar la <strong>Seguridad en los condominios</strong>, la cual consume una api-rest en PHP para 
-                            comunicarse con la base de datos en MySQL.
-                        </p>
-                        <p>
-                            Esta aplicación se canceló, debido que conocí APACHE CORDOVA y consideré mejor programar una 
-                            sóla vez la aplicación y llevar la exportación a Andriod, IOS y Browser, en vez de programar tres 
-                            veces para cada una de estas plataformas. Actualmente esta aplicación se encuentra en etapa de desarrollo.
-                            <i>Repositorio no disponible.</i>
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/asp.png" alt="asp"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            En CASCHILE, empresa donde soy empleado, mantengo e implemento cambios en sitios web bajo el lenguaje 
-                            de ASP Clásico. Entre esos trabajos, hice un sitio web que <strong>Administra Certificados Digitales</strong> 
-                            donde se hace un CRUD completo de ellos, consumiendo una api-rest en PHP creada e implamentada por mí. La 
-                            comunicación en con SQLServer, donde se guardan los datos de los dueños de los certificados digitales.
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/sharp.png" alt="sharp"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8  info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            Desarrollo de una <strong>Api para el ingreso y salida de camiones</strong> en el sector 
-                            de aduanas. Esta API permite la comunicación entre los distintos procesos que pasa un 
-                            camión al momento de ingresar y salir de la Aduana con la base de datos. Se 
-                            desarrolla en .NET y se le asigna una tarea programada a la aplicación de 
-                            consola encargada de hacer la gestión informática.
-                        </p>
-                        <p>
-                            Desarrollado en C# y ASP.NET en MVC con los Frameworks Entity, NewtonSoft y LinkQ. Este Desarrollo fue 
-                            hecho para DPWORLD Empresa Portuaria de San Antonio (EPSA), momento en que hacía mi práctica laboral.
-                        </p>
-                    </li>
-                    <li class="my-2">
-                        <p>
-                            Una <strong>Aplicación de escritorio</strong> que se consume el servicio REST que gestiona 
-                            de la entrada y salida de camiones de carga. Imprime de manera automática en una imprresora térmica
-                            un ticket con la información del camión ingresado. Desarrollado en C# en MVC con el Framework System.Drawing.
-                        </p>
-                    </li>
-                    <li class="py-2">
-                        <p>
-                            En ASP .NET se realiza el <strong>Sitio Web</strong> que permite reimprimir los ticket a partir de 
-                            la patente del vehículo, este sitio de igual forma, deberá consumir la API y traer 
-                            los datos del camión, se realiza esto por medio de HTML5, CSS (Bootstrap 3), Javascript y Razor (Sintaxis 
-                            de programación para incrustar código de servidor en páginas web.
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/mysql.png" alt="mysql"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            En la mayoría de mis proyectos, ocupo como motor de base de datos <strong>MySQL</strong>, donde domino lo siguiente:
-                            <ul style="padding-left: 20px; text-align: left;">
-                                <li>HeidiSQL como UI</li>
-                                <li>Consultas</li>
-                                <li>Creación y modificación de tablas</li>
-                                <li>Procedimientos de almacenado</li>
-                                <li>Funciones</li>
-                                <li>Disparadores</li>
-                                <li>Eventos</li>
-                            </ul>
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-        <hr>
-        <article class="row">
-            <div class="col-12 col-md-6 col-xl-4 text-center">
-                <img src="{absolute}/img/sql.png" alt="sql"><br>
-                <button type="button" class="btn btn-dark mb-3">Ver Más</button>
-            </div>
-            <div class="col-12 col-md-6 col-xl-8 info" style="display: none;">
-                <ol>
-                    <li class="my-2">
-                        <p>
-                            <strong>SQLSERVER</strong> lo utilizo diariamente en CASCHILE, empresa donde presto mis servicios como Programador 
-                            Web Fullstack, donde domino lo siguiente:
-                            <ul style="padding-left: 20px; text-align: left;">
-                                <li>Management Studio como UI</li>
-                                <li>SQL Profiler</li>
-                                <li>Consultas</li>
-                                <li>Creación y modificación de tablas</li>
-                                <li>Procedimientos de almacenado</li>
-                                <li>Funciones</li>
-                                <li>Disparadores</li>
-                                <li>Transacciones</li>
-                                <li>Jobs</li>
-                            </ul>
-                        </p>
-                    </li>
-                </ol>
-            </div>
-        </article>
-    </div>
-</section>
-<section class="row ventana py-5" id="contact">
-    <div class="col-12 text-center">
-        <h2>CONTÁCTAME</h2>
-        <p>Llena los campos y conversemos.</p>
-    </div>
-    <form class="col-12 m-auto">
-        <label class="form-label">Nombre completo
-            <input type="text" class="form-control" name="nombre" required maxlength="100" />
-        </label>
-        <label class="form-label">Correo electrónico
-            <input type="email" class="form-control" required maxlength="100" name="mail" />
-        </label>
-        <label class="form-label">Mensaje
-            <textarea name="message" maxlength="500" class="form-control"></textarea>
-            <div id="emailHelp" class="form-text text-white">Tienes un máximo de 500 caracteres.</div>
-        </label>
-        <input type="submit" value="Enviar" class="btn btn-primary" />
-    </form>
-    <div class="col-12">
-        <div class="social">
-            <a href="https://www.linkedin.com/in/patrick-romero-figueroa-a77704231/" target="_blank"
-                title="Linkedin">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/github-pat" target="_blank"
-                title="Github">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </div>
+	<div class="col-12 text-center mb-5">
+		<h2>EXPERIENCIAS</h2>
+		<p>Detalle más profundo de mis habilidades como programador y experiencia a lo largo de los años.</p>
+	</div>
+	<div class="accordion col-12">
+		<article class="accordion-item row">
+			<div class="accordion-header accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/html.png" alt="html-css-js"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+					<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1"
+					aria-expanded="false" aria-controls="c1">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c1" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse" aria-labelledby="headingOne"
+				data-bs-parent="#accordionExample">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							Mi primer <strong>Sitio Web</strong>, lo comencé cuando llevaba un par de meses en el instituto,
+							está hecho con HTML, CSS y una bilbioteca de íconos <a href="https://icomoon.io/">Icomoon</a>. 
+							El proyecto no está terminado, lo guardo sólo por los buenos recuerdos.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 05/2017 -
+							<i class="fas fa-calendar-alt d-inline"></i> 02/2018
+						</p>
+					</li>
+					<li>
+						<p>
+							Proyecto del instituto. Sitio web para la <strong>Gestión y Administración
+								de Condominios</strong>, trabajando en el lado del cliente con HTML5, CSS y Javascript,
+							y
+							así como con Bootstrap (Framework de CSS) y Jquery (Framework Javascript).
+							En el lado del servidor, montamos una APIRest con SlimFramework, la cual se comunicaba
+							con la base de datos MySQL.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+							<i class="fas fa-calendar-alt d-inline"></i> 12/2018
+						</p>
+					</li>
+					<li>
+						<p>
+							Sitio web autoadministrable SPA para la <strong>Revista Digital Bulevar San Antonio,
+								Chile.</strong>
+							Se utilizó todo lo mencionado anteriormente, y se utilizó un código de javascript llamado
+							PdfToImage, el cual convierte un documento en PDF a Imagen, el cual se encuentra en mi
+							repositorio
+							de github.
+						</p>
+						<p>
+							El cliente subía un pdf y el sistema por dentro transformaba cada una de las páginas
+							en imágenes, esto lo hacía, con el objeto de acelerar la carga de cada una de las páginas
+							del
+							documento, ya que al cargar el pdf en el sitio web, el usuario experimentaba una demora,
+							debido a la carga completa del documento y no sólo de la página que leía.
+							<br><i>Revista actualmente no disponible por no pago de hosting y dominio.</i>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> 05/2019
+						</p>
+					</li>
+					<li>
+						<p>
+							Sitio web autoadministrable SPA para 2 colegios, <strong>Colegio Las Cruces y Colegio
+								Newen.</strong>
+							Módulo de intranet de colegio, donde permite la promoción y matricula del alumnado. Se
+							utilizó lo anteriormente nombrado,
+							y se hizo una apirest en php para la comunicación del cliente/servidor con la base de datos
+							MySQL.
+							<br><i>Repositorio privado</i>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 09/2020 -
+							<i class="fas fa-calendar-alt d-inline"></i> 12/2020
+						</p>
+					</li>
+					<li>
+						<p>
+							Vistas para sitio de <strong>Farmacia Municipal.</strong>
+							Se utilizó HTML, CSS, Javascript - Bootstrap y Jquery.
+							<br><i>Repositorio privado</i>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 05/2020 -
+							<i class="fas fa-calendar-alt d-inline"></i> 06/2020
+						</p>
+					</li>
+					<li>
+						<p>
+							Sitio web autoadministrable SPA <strong>Corredora Norma Quiroz Huaico.</strong>
+							Se utilizó PHP, HTML, CSS, Javascript - Bootstrap y Jquery. El sitio utiliza una api externa
+							para obtener el valor
+							de la UF, convirtiendo los precios de pesos a UF y viceversa según estime el visitante del
+							sitio. <br>
+							El cliente aún no sube nada al sitio web, por lo cual están los textos de prueba. Base de
+							datos MySQL.
+							<br>
+							<a href="https://corredoranormaquiroz.cl/"
+								target="_blank">https://corredoranormaquiroz.cl/</a>
+							<br>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 10/2020 -
+							<i class="fas fa-calendar-alt d-inline"></i> 01/2021
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/TS.png" alt="ts-angular"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 09/2021 -
+					<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2"
+					aria-expanded="false" aria-controls="c2">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c2" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							<strong>Red social</strong> Aplicación híbrida (IOS, Android y Browser). El proyecto se
+							encuentra en etapa de desarrollo.
+							Se está creando en APACHE CORDOVA con HTML5, CSS y TypeScript - Bootstrap y Angular. <br>
+							Consume una api-rest creada por mi en PHP, la cual gestiona al cliente con el servidor y la
+							base de datos en MySQL.
+							<i>Repositorio no disponible.</i>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 09/2021 -
+							<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Gestión de documentos</strong>
+							Aplicación web de administración de documentos, sitio para CASCHILE, empresa donde presto servicios 
+							como programador fullstack, el servidor es una api en C# con ASP.NET CORE y el FRONT con Angular.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 09/2021 -
+							<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Portafolio.</strong> Este es un sitio web SPA y está creado con HTML5, TypeScript y
+							CSS - Bootstrap.
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 02/2022 -
+							<i class="fas fa-calendar-alt d-inline"></i> 03/2022
+						</p>
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/php.png" alt="php"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+					<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3"
+					aria-expanded="false" aria-controls="c3">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c3" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							Implementación de api rest <strong>SlimFramework</strong>. ApiRest para proyecto de la casa
+							de estudios Instituto Profesional Los Lagos. (Ver apartado de HTML5-CSS-JS).
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+							<i class="fas fa-calendar-alt d-inline"></i> 08/2018
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Api Rest</strong> programada de forma nativa en PHP orientado a objeto. Esta Api, es
+							la
+							que ocupo generalmente en mis proyectos, ya que es liviana y fácil de implementar. Su
+							consumo es
+							mediante JSON, sin embargo también es compatible con XML.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 07/2021 -
+							<i class="fas fa-calendar-alt d-inline"></i> 12/2021
+						</p>
+					</li>
+					<li>
+						<p>
+							En CASCHILE, empresa donde soy empleado, mantengo e implemento cambios en un sitio web hecho
+							en PHP
+							con el Framework <strong>Codeigniter</strong>, donde hice un curso intensivo de éste para
+							poder
+							gestionar el sitio de mejor forma. Consumo de servicios a WebServices mediante XML con
+							SOAP y consumo de servicios REST.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 05/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> Actual
+						</p>
+					</li>
+					<li>
+						<p>
+							Implementación de <strong>PHPMailer</strong> para envío de correos html mediante PHP,
+							librería
+							que ocupo en mis proyectos y en la empresa donde presto servicioA.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 05/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> Actual
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/android-java.png" alt="android-java"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 02/2020 -
+					<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4"
+					aria-expanded="false" aria-controls="c4">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c4" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							Aplicación creada en Android Studio bajo el lenguaje de JAVA. Esta es una aplicación
+							para aumentar la <strong>Seguridad en los condominios</strong>, la cual consume una api-rest
+							en PHP para
+							comunicarse con la base de datos en MySQL.
+						</p>
+						<p>
+							Esta aplicación se canceló, debido que conocí APACHE CORDOVA y consideré mejor programar una
+							sóla vez la aplicación y llevar la exportación a Andriod, IOS y Browser, en vez de programar
+							tres
+							veces para cada una de estas plataformas. Actualmente esta aplicación se encuentra en etapa
+							de desarrollo.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 02/2020 -
+							<i class="fas fa-calendar-alt d-inline"></i> Cancelado
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/asp.png" alt="asp"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+					<i class="fas fa-calendar-alt d-inline"></i> 03/2019
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5"
+					aria-expanded="false" aria-controls="c5">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c5" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							En CASCHILE, empresa donde soy empleado, mantengo e implemento cambios en sitios web bajo el
+							lenguaje
+							de ASP Clásico. Entre esos trabajos, hice un sitio web que <strong>Administra Certificados
+								Digitales</strong>
+							donde se hace un CRUD completo de ellos, consumiendo una api-rest en PHP creada e
+							implamentada por mí. La
+							comunicación en con SQLServer, donde se guardan los datos de los dueños de los certificados
+							digitales.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 03/2021 -
+							<i class="fas fa-calendar-alt d-inline"></i> 07/2022
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/sharp.png" alt="sharp"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+					<i class="fas fa-calendar-alt d-inline"></i> 03/2019
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6"
+					aria-expanded="false" aria-controls="c6">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c6" class="col-12 col-md-6 col-xl-8  info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							Desarrollo de una <strong>Api para el ingreso y salida de camiones</strong> en el sector
+							de aduanas. Esta API permite la comunicación entre los distintos procesos que pasa un
+							camión al momento de ingresar y salir de la Aduana con la base de datos. Se
+							desarrolla en .NET y se le asigna una tarea programada a la aplicación de
+							consola encargada de hacer la gestión informática.
+						</p>
+						<p>
+							Desarrollado en C# y ASP.NET en MVC con los Frameworks Entity, NewtonSoft y LinkQ. Este
+							Desarrollo fue
+							hecho para DPWORLD Empresa Portuaria de San Antonio (EPSA), momento en que hacía mi práctica
+							laboral.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> 03/2019
+						</p>
+					</li>
+					<li>
+						<p>
+							Una <strong>Aplicación de escritorio</strong> que se consume el servicio REST que gestiona
+							de la entrada y salida de camiones de carga. Imprime de manera automática en una impresora
+							térmica
+							un ticket con la información del camión ingresado. Desarrollado en C# en MVC con el
+							Framework System.Drawing.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> 03/2019
+						</p>
+					</li>
+					<li class="py-2">
+						<p>
+							En ASP .NET se realiza el <strong>Sitio Web</strong> que permite reimprimir los ticket a
+							partir de
+							la patente del vehículo, este sitio de igual forma, deberá consumir la API y traer
+							los datos del camión, se realiza esto por medio de HTML5, CSS (Bootstrap 3), Javascript y
+							Razor (Sintaxis
+							de programación para incrustar código de servidor en páginas web.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 01/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> 03/2019
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>Gestión de documentos</strong>
+							Aplicación web de administración de documentos, sitio web para CASCHILE, empresa donde presto servicios 
+							como programador fullstack, el servidor es una api en C# con ASP.NET CORE y el FRONT con Angular y bootstrap.
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 09/2021 -
+							<i class="fas fa-calendar-alt d-inline"></i> En desarrollo
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/mysql.png" alt="mysql"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+					<i class="fas fa-calendar-alt d-inline"></i> Actual
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7"
+					aria-expanded="false" aria-controls="c7">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c7" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							En la mayoría de mis proyectos, ocupo como motor de base de datos <strong>MySQL</strong>,
+							donde domino lo siguiente:
+						<ul style="padding-left: 20px; text-align: left;">
+							<li>HeidiSQL como UI</li>
+							<li>Consultas</li>
+							<li>Creación y modificación de tablas</li>
+							<li>Procedimientos de almacenado</li>
+							<li>Funciones</li>
+							<li>Disparadores</li>
+							<li>Eventos</li>
+						</ul>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 04/2018 -
+							<i class="fas fa-calendar-alt d-inline"></i> Actual
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+		<hr>
+		<article class="accordion-item row">
+			<div class="accordion-header col-12 col-md-6 col-xl-4 text-center">
+				<img src="{absolute}/img/sql.png" alt="sql"><br>
+				<p class="pt-2">
+					<i class="fas fa-calendar-alt d-inline"></i> 04/2019 -
+					<i class="fas fa-calendar-alt d-inline"></i> Actual
+				</p>
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8"
+					aria-expanded="false" aria-controls="c8">
+					Ver Mas
+				</button>
+			</div>
+			<div id="c8" class="col-12 col-md-6 col-xl-8 info accordion-collapse collapse">
+				<ol class="accordion-body">
+					<li>
+						<p>
+							<strong>SQLSERVER</strong> lo utilizo diariamente en CASCHILE, empresa donde presto mis
+							servicios como Programador
+							Web Fullstack, donde domino lo siguiente:
+						<ul style="padding-left: 20px; text-align: left;">
+							<li>Management Studio como UI</li>
+							<li>SQL Profiler</li>
+							<li>Consultas</li>
+							<li>Creación y modificación de tablas</li>
+							<li>Procedimientos de almacenado</li>
+							<li>Funciones</li>
+							<li>Disparadores</li>
+							<li>Transacciones</li>
+							<li>Jobs</li>
+						</ul>
+						</p>
+						<p class="fecha">
+							<i class="fas fa-calendar-alt d-inline"></i> 04/2019 -
+							<i class="fas fa-calendar-alt d-inline"></i> Actual
+						</p>
+					</li>
+				</ol>
+			</div>
+		</article>
+	</div>
 </section>
 <footer class="row py-5 ventana text-center">
-    <div class="col-12"></div>
-    <div class="col-12 p-0 m-0 text-center">
-        <h2>Patrick &nbsp;Romero</h2>
-        <p>
-            <i>Programador Fullstack</i>
-        </p>
-        <i class="fas fa-phone"></i><a href="tel:+56988106315"> +56 9 8810 6315</a>
-    </div>
-    <div class="col-12">
-        <img src="{absolute}/img/dispositivos.png" alt="dispositivos" />
-    </div>
+	<header class="col-12 p-0 m-0 text-center">
+		<hgroup>
+			<h2>Patrick &nbsp;Romero</h2>
+			<h5>Programador Fullstack</h5>
+		</hgroup>
+	</header>
+	<section class="col-12">
+		<img src="{absolute}/img/Dispositivos.png" alt="dispositivos" />
+	</section>
+	<section class="social">
+		<a href="mailto:patrick@holapatrick.com" title="Correo de contacto">
+			<i class="fas fa-envelope"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/patrick-romero-figueroa-a77704231/" target="_blank" title="Linkedin">
+			<i class="fab fa-linkedin"></i>
+		</a>
+		<a href="https://github.com/patatrick" target="_blank" title="Github">
+			<i class="fab fa-github"></i>
+		</a>
+	</section>
 </footer>

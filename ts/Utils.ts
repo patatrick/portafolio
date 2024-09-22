@@ -38,29 +38,38 @@ class Utils {
         };
     }
     static ajustarScreen() {
-        const divPortada = document.querySelector('#portada')! as HTMLDivElement;
-        const divTitulo = document.querySelector('#titulo')! as HTMLDivElement;
-        const divNav = document.querySelector('nav') as HTMLDivElement;
-        const ventana = document.querySelectorAll('.ventana') as NodeListOf<HTMLDivElement>;
-
         const alto: number = Utils.Height();
-        divPortada.style.height = alto.toString() + "px";
-        divTitulo.style.top = (alto / 2 - 35).toString() + "px";
+        const divNav = document.querySelector('nav') as HTMLDivElement;
+        const arr_ventana = document.querySelectorAll('.ventana') as NodeListOf<HTMLDivElement>;
+        const arr_carousel = document.querySelectorAll('.carousel-item') as NodeListOf<HTMLDivElement>;
+        const arr_imgPortada = document.querySelectorAll('#portada img') as NodeListOf<HTMLImageElement>;
+        
+        arr_carousel.forEach(item =>{
+            item.style.height = alto.toString() + "px";
+        });
+        arr_imgPortada.forEach(img =>{
+            img.style.height = (alto + alto * 0.2).toString() + "px";
+        })
+        arr_ventana.forEach(div =>{
+            div.style.minHeight = alto + "px";
+        });
+        
         window.onscroll = () => {
             if (window.scrollY > alto) {
-                divNav.style.background = "rgba(248, 248, 255, 0.9)";
+                divNav.style.background = "rgba(252, 252, 252, 0.9)";
             }
             else {
+                let barra: number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                let posicion: number =  (barra * 0.2);
+                arr_imgPortada.forEach(img =>{
+                    img.style.objectPosition = 'center -' + posicion.toString() + 'px';
+                });
                 divNav.style.background = "transparent";
             }
         }
-
-        ventana.forEach(element => {
-            element.style.minHeight = alto + "px";
-        });
-
     }
-    static Template(templateName: string, locationOrigin: string = location.origin): Promise<void> {
+    static Template(templateName: string): Promise<void> {
+        const locationOrigin = localStorage.root;
         return new Promise((resolve, reject) => {
             fetch(locationOrigin + "/templates/" + templateName + ".html", { cache: 'no-cache' })
                 .then(response => response.text())
@@ -77,7 +86,7 @@ class Utils {
     static Empty(str: string): string | boolean{
         return !str || !/[^\s]+/.test(str);
     }
-    static loading(load:boolean = true):void
+    static loading(load: boolean = true): void
 	{
         const divLoad = document.querySelector('#loader');
         if(divLoad) divLoad.remove();

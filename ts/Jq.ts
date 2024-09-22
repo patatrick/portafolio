@@ -41,4 +41,15 @@ class Jq{
     public go(id: string) {
         document.querySelector(id)?.scrollIntoView({behavior: 'smooth'});
     }
+    public parallax(velocidad: number) : void
+    {
+        window.onscroll = ()=>{
+            console.log('o');
+            
+            let barra: number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            let posicion: number =  (barra * velocidad);
+            
+            this.element.style.backgroundPosition = '0 -' + posicion.toString() + 'px';
+        };
+    }
 }

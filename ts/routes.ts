@@ -1,11 +1,7 @@
-interface Add {
-    path: RegExp | string;
-    cb: (() => void);
-}
 export default
 class Routes {
     constructor(
-        public root: string = location.hostname
+        public root: string = ""
     ) {}
     public add(path: string): void | null 
     {
