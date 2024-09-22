@@ -1,6 +1,6 @@
-#RewriteEngine on
-#RewriteCond %{HTTPS} !=on
-#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+RewriteEngine on
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
-#Options -Indexes
-#DirectoryIndex /index.html
+Options -Indexes
+DirectoryIndex /index.html
