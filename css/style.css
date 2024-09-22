@@ -1,0 +1,169 @@
+@font-face {
+    font-family: "Patrick";
+    src: url('../fonts/Death Star.otf');
+  }
+body{
+    background-color: ghostwhite;
+}
+ul{
+    padding: 0;
+}
+label{
+    width: 100%;
+}
+nav li a, h2 a {
+    text-decoration: none;
+    color: inherit;
+}
+nav li a:hover, nav h2 a:hover{
+    color: grey;
+}
+.portafolio #portada{
+    background-image: url("../img/portada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+}
+.blog #portada{
+    background-image: url("../img/bg-blog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2.5px) saturate(0.4) brightness(0.5);
+}
+#titulo{
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#personal img {
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+.row{
+    padding: 10px;
+}
+nav{
+    background: transparent;
+    position: fixed;
+    top: 0;
+    color: darkgray;
+    z-index: 1;
+    font-weight: bold;
+    padding-right: 0 !important;
+    padding-left: 10px !important;
+}
+nav ul{
+    width: 100%;
+    padding: 0;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 7px;
+    margin-top: 10px;    
+}
+nav ul li:hover{
+    color: grey;
+    cursor: pointer;
+}
+nav h2{
+    font-family: 'Patrick', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 13px;
+    font-size: 22px;
+}
+#resena p{
+    font-style: italic;
+    text-align: justify;
+}
+#lenguajes{
+    background-color: #3b5aa8;
+    color: white;
+    text-align: center;
+}
+#lenguajes li {
+    list-style: none;
+    font-size: 20px;
+    padding: 5px;
+}
+#lenguajes ul{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: auto;
+    max-width: 600px;
+}
+#habilidades img{
+    max-width: 250px;
+    margin-bottom: 30px;
+}
+#habilidades ol{
+    text-align: justify;
+    padding: 0;
+    padding-left: 10px;
+}
+#habilidades i{
+    width: 100%;
+    display: inline-block;
+}
+#contact{
+    background-color: #232937;
+    color: white;
+}
+#contact form{
+    max-width: 500px;
+}
+#contact textarea{
+    min-height: 100px;
+    max-height: 250px;
+}
+.social{
+    margin-left: auto;
+    width: 200px;
+}
+.social a{
+    font-size: xx-large;
+    color: white;
+    display: inline-block;
+    width: 45px;
+}
+.social a:hover i{
+    font-size: 42px;
+}
+footer{
+    background-color:ghostwhite;
+}
+footer img{
+    max-width: 800px;
+    width: 100%;
+}
+footer h2{
+    font-family: 'Patrick', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 33px;
+    padding: 0;
+    margin: 0;
+}
+footer i{
+    font-size: larger;
+}
+
+@media (min-width: 340px){
+    nav h2{
+        top: 11px;
+        font-size: 25px;
+    }
+}
+@media (min-width: 768px){
+    #habilidades .info{
+        display: initial !important;
+        opacity: 1 !important;
+    }
+    #habilidades button{
+        display: none;
+    }
+}
