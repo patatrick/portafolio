@@ -3,8 +3,8 @@ import Utils from "./Utils.js";
 import Routes from "./routes.js";
 export default
     class App {
-    //private URL: string = "";
-    private URL: string = "/holapatrick.com";
+    private URL: string = "";
+    // private URL: string = "/holapatrick.com";
     public load() {
         localStorage.setItem("root", this.URL);
         this.portafolio();
